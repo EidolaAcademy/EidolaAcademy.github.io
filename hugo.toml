@@ -1,0 +1,27 @@
+baseURL = 'https://eidolaacademy.github.io'
+locale = 'en-us'
+title = 'Eidola Academy'
+theme = 'PaperMod'
+
+
+[menu]
+  [[menu.main]]
+    name = "主页"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "博客"
+    url = "/blog/"
+    weight = 2
+  [[menu.main]]
+    name = "新闻"
+    url = "/news/"
+    weight = 3
+
+[markup.goldmark.renderer]
+    unsafe = true
+
+[params.label]
+    text = "Eidola Academy"
+    icon = "/images/eidola.ico"
+    iconHeight = 35
