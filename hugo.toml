@@ -41,4 +41,4 @@ theme = 'PaperMod'
 
     # 第三块：行动/加入群聊
     homeActionTitle = "加入Eidola会员群"
-    homeActionBody = "点击下方按钮加入会员社区。"
+    homeActionBody = "点击下方按钮加入会员群（仅限B站充电会员/Youtube会员）"
