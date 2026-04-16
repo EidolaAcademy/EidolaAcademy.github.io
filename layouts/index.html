@@ -1,0 +1,89 @@
+{{ define "main" }}
+<div class="homepage-wrapper">
+
+    <!-- 第一块：介绍区 (Intro Section) -->
+    <section class="section-intro">
+        <h1>{{ .Site.Params.homeIntroTitle }}</h1>
+        <p>{{ .Site.Params.homeIntroBody | markdownify }}</p>
+    </section>
+
+    <!-- 第二块：文章区 (Latest Posts Section) -->
+    <section class="section-posts">
+        <h2 class="section-label">Latest Posts</h2>
+        <div class="posts-container">
+            {{ $posts := (where .Site.RegularPages "Section" "posts") }}
+            {{ range first 5 $posts }}
+            <div class="post-entry">
+                <a href="{{ .Permalink }}" class="post-title">{{ .Title }}</a>
+                <time>{{ .Date.Format "Jan 2, 2006" }}</time>
+            </div>
+            {{ end }}
+        </div>
+        <a href="/posts/" class="view-all">View all posts →</a>
+    </section>
+
+    <!-- 第三块：行动区 (Action/Newsletter Section) -->
+    <section class="section-action">
+        <h2 class="section-label">{{ .Site.Params.homeActionTitle }}</h2>
+        <p>{{ .Site.Params.homeActionBody }}</p>
+        
+        <!-- 这里可以放你的 Google Form 链接或按钮 -->
+        <div class="action-box">
+            <a href="你的表单链接" class="button">立即申请加入</a>
+        </div>
+    </section>
+
+</div>
+
+<style>
+    /* 基础布局 */
+    .homepage-wrapper {
+        max-width: 700px;
+        margin: 80px auto;
+        padding: 0 20px;
+        line-height: 1.6;
+    }
+
+    /* 三块之间的间距 */
+    section { margin-bottom: 80px; }
+
+    /* 块标题样式 (Latest Posts / Subscribe) */
+    .section-label {
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: #888;
+        border-bottom: 1px solid #eee;
+        padding-bottom: 10px;
+        margin-bottom: 25px;
+    }
+
+    /* 第一块：介绍 */
+    .section-intro h1 { font-size: 2.2rem; margin-bottom: 15px; }
+    .section-intro p { font-size: 1.2rem; color: #333; }
+
+    /* 第二块：文章列表 */
+    .post-entry {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        margin-bottom: 15px;
+    }
+    .post-title { font-weight: 600; text-decoration: none; color: #000; font-size: 1.1rem; }
+    .post-title:hover { text-decoration: underline; }
+    time { font-size: 0.9rem; color: #999; }
+    .view-all { display: inline-block; margin-top: 15px; font-size: 0.9rem; color: #666; }
+
+    /* 第三块：按钮样式 */
+    .button {
+        display: inline-block;
+        padding: 12px 24px;
+        background: #000;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 6px;
+        font-weight: 600;
+        margin-top: 10px;
+    }
+</style>
+{{ end }}

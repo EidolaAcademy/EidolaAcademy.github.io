@@ -33,3 +33,12 @@ theme = 'PaperMod'
     text = "Eidola Academy"
     icon = "/images/eidola.ico"
     iconHeight = 35
+
+[params]
+    # 第一块：介绍
+    homeIntroTitle = "Hey there. 👋"
+    homeIntroBody = "这里写你的自我介绍。欢迎来到 Eidola Academy。"
+
+    # 第三块：行动/加入群聊
+    homeActionTitle = "加入会员群"
+    homeActionBody = "想获取更多资源？点击下方按钮加入我们的会员社区。"
