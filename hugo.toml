@@ -1,4 +1,4 @@
-baseURL = 'https://eidolaacademy.github.io'
+baseURL = 'https://eidolaacademy.github.io/'
 locale = 'en-us'
 title = 'Eidola Academy'
 theme = 'PaperMod'
