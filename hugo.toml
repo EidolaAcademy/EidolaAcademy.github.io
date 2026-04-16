@@ -17,6 +17,10 @@ theme = 'PaperMod'
     name = "新闻"
     url = "/news/"
     weight = 3
+  [[menu.main]]
+    name = "向Eidola提问"
+    url = "/questions/"
+    weight = 4
 
 [markup.goldmark.renderer]
     unsafe = true
