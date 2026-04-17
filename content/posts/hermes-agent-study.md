@@ -11,6 +11,7 @@ TocOpen: false
 
 最近我关注到了 Nous Research 发布的一个非常有趣的开源项目：**[Hermes Agent](https://github.com/nousresearch/hermes-agent)**。
 
+这里有个非常好的教程：**[Inside Hermes Agent](https://mranand.substack.com/p/inside-hermes-agent-how-a-self-improving)**。
 
 ## 什么是 Hermes Agent？
 
