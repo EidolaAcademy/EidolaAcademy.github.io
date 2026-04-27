@@ -10,3 +10,4 @@ title = 'Resource'
 - [Agentic Reviewer](https://paperreview.ai/) - AI agent 自动审稿
 - [Hedge Agent](https://github.com/virattt/ai-hedge-fund/tree/main) - AI agent 蒸馏股票交易行为，这个框架非常好
 - [Dive Into Claude Code](https://github.com/VILA-Lab/Dive-into-Claude-Code) - Cloude Code 源码分析与论文分析
+- [DataWhale](https://github.com/datawhalechina) - 这是一个资料非常全的网站。
