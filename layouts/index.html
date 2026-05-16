@@ -7,6 +7,21 @@
         <p>{{ .Site.Params.homeIntroBody | markdownify }}</p>
     </section>
 
+	<!-- 新增分享板块 -->
+{{ if .Site.Params.homeShareTitle }}
+<section style="margin: 40px 0; padding: 25px; border: 2px dashed #ddd; border-radius: 12px;">
+    <h2 style="margin-top: 0;">{{ .Site.Params.homeShareTitle }}</h2>
+    <p>{{ .Site.Params.homeShareBody }}</p>
+    <p>
+        <strong>欢迎发送邮件至：</strong>
+        <a href="mailto:{{ .Site.Params.homeShareEmail }}?subject=我这周做了这个" style="font-weight: bold; color: #007bff; text-decoration: underline;">
+            {{ .Site.Params.homeShareEmail }}
+        </a>
+    </p>
+    <p style="font-size: 0.9em; color: #666;">邮件题目：我这周做了这个</p>
+</section>
+{{ end }}
+
     <!-- 第二块：文章区 (Latest Posts Section) -->
     <section class="section-posts">
         <h2 class="section-label">Latest Posts</h2>
