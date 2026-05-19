@@ -50,4 +50,6 @@ theme = 'PaperMod'
 
     # 第三块：行动/加入群聊
     homeActionTitle = "加入Eidola会员群"
-    homeActionBody = "点击下方按钮加入会员群（仅限B站充电会员/Youtube会员）"
+	homeActionImage = "/images/qr-code.png"
+    # 或者如果支持 Markdown 语法
+    homeActionContent = "![群聊二维码](/images/qr-code.png)"
